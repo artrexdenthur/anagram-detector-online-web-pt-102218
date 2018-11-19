@@ -10,7 +10,6 @@ class Anagram
   
   def match(ana_arr)
     # return all anagram matches in an array
-    matches = []
     ana_arr.find_all { |ana| ana.split('').sort == word.split('').sort }
   end
   
