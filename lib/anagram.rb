@@ -12,6 +12,8 @@ class Anagram
     # return all anagram matches in an array
     matches = []
     ana_arr.each do |ana|
-      if ana.sort
+      matches << ana if ana.split('').sort == word.split('').sort
+    end
+  end
   
 end
